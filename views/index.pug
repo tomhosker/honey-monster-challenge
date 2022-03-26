@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1 Honey Monster Challenge
+    p Welcome to the #[b Honey Monster Challenge]! A word game based on the polygon problems printed in the #[i Times]!
+
+    h2 Problem
+
+    p #[b Inner letter:] #{innerLetter}
+
+    p #[b Outer letters:] #{outerLetters}
+
+    button(onclick="showHide()") Show/hide solution
+
+    div.show-hide(id="show-hide", display="none")
+        p #[b Max letter word:] #{maxLetterWord}
+        p #[b Other words:] #{otherWords}
+
+    script(type="text/javascript", src="/frontend_scripts/show_hide.js")
